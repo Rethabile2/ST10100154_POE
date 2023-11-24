@@ -27,7 +27,9 @@ namespace ST1010015_POE.Controllers
             _logger = logger;
         }
 
-        
+        public HomeController()
+        {
+        }
 
         public IActionResult Index()
         {

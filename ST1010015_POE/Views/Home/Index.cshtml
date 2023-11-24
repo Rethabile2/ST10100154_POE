@@ -5,7 +5,7 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome To The Diaster Alleviation Foundation</h1>
     @{
         if (@Accessor.HttpContext.Request.Cookies["Authenticated"] != null && @Accessor.HttpContext.Request.Cookies["Authenticated"].ToString().Equals("True"))
         {
@@ -99,24 +99,10 @@
         }
         else
         {
-            <a class="btn w-100" style="background-color:#AA1AED" asp-action="AuthorisedUsersLogin">Login</a>
+            <a class="btn w-50" style="background-color:darkorange" asp-action="AuthorisedUsersLogin">Login</a>
         }
     }
-    <a asp-action="publicInfoMoney" type="button" class="btn w-100 mt-4" style="background-color:#AA1AED">View Money Allocated to Disasters</a>
-    <h2>What we do</h2>.
-    <p>
-        The Disaster Alleviation Foundation is a non‐profit organisation. The foundation’s mission is to provide practical aid during disasters. We
-        receive donations from various sources and need a system to track what is available and what has
-        been dispatched to help with which disaster.
-        Donations can be made by individuals, companies, other organisations, and even governments.
-        Donations can be goods (clothes, non‐perishable foods, etc.) or monetary. Donors can choose to
-        remain anonymous.
-        The Disaster Alleviation Foundation does track what happens with the donations. For
-        example, goods can be dispatched to help with a disaster. And money can either be paid out (for
-        example, to a local community organisation) or used to purchase goods that are then dispatched
-        to a disaster area.
-        The Disaster Alleviation Foundation has transparency as one of its core values. It is important to
-        them that the collected data is accurate and always available to the right stakeholders.
-    </p>
+    <a asp-action="publicInfoMoney" type="button" class="btn w-50 mt-4" style="background-color:darkorange">View Money Allocated to Disasters</a>
+    
 
 </div>
